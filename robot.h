@@ -24,7 +24,7 @@ class Robot
     bool moveTo (int lx, int ly, char grid[10][10]);
     bool pickUp (int lx, int ly, char grid[10][10]);
     bool dropOff (int lx, int ly, char grid[10][10]);
-    
+    friend ostream& operator<<(ostream& out, Robot& robot);
     ~Robot();
     
 };
